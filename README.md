@@ -1,2 +1,2 @@
-# Omino
-Omino is food ordering website.
+# JTGeats
+JTGeats is food ordering website.
