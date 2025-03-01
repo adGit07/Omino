@@ -1,0 +1,496 @@
+<html>
+  <head>
+    <title>Home Food Delivery</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick Carousel JS -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="logo"><b>JTGeats</b></div>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Menu</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </nav>
+        <div>
+          <a href="#"><i class="fas fa-search"></i></a>
+          
+          <a href="javascript:void(0)" onclick="showCartPopup()">
+            <i class="fas fa-shopping-cart"></i>
+        </a>
+    
+        <div id="overlay" class="overlay">
+            <div class="cart-popup">
+                <img src="bag.jpg" alt="Bag" id="bagImage" >
+                <h2 id=head><b></b>Cart is Empty</b></h2>
+                <p id=additem>Add some items to the cart</p>
+                <button onclick="goBackToHome()">Back to Home</button>
+            </div>
+        </div>
+        
+    
+
+
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="content">
+          <h1>
+            Authentic Home<br />
+            food in India
+          </h1>
+          <p style="font-weight: 100; font-size:15px;">
+            Choose from a wide range of delicious and authentic home <br />
+            cooked food and have it delivered to your doorstep.
+          </p>
+          <div style="width:90% ; display: flex;">
+            <input type="text" placeholder="Search food..." />
+            <button style="color: white;">Search</button>
+          </div>
+        </div>
+        <img src="cuate.png" alt="Chef illustration" />
+      </div>
+    </section>
+
+    <!-- Home Kitchen Section -->
+    <!-- Home Kitchen Section -->
+    <section class="section">
+      <div class="container">
+        <h2>Home Kitchen</h2>
+        <div class="grid">
+          <!-- Food Item -->
+          <div class="card">
+            <img src="unsplash_33GPuoFI7v8.png" alt="Delicious pizza" />
+            <div class="content">
+              <p>Pizza Margherita <span>₹199</span></p>
+              <div class="actions">
+                <div>
+                  <span class="rating"><i class="fas fa-star"></i> 4.3</span>
+                  <span class="price">15min</span>
+                </div>
+                <button class="add">+</button>
+              </div>
+              
+            </div>
+            <div class="discount-badge">20%</div>
+          </div>
+          <div class="card">
+            <img src="unsplash_60nzTP7_hMQ.png" alt="Delicious pizza" />
+            <div class="content">
+              <p>Olive Pizza <span>₹230</span></p>
+              <div class="actions">
+                <div>
+                  <span class="rating"><i class="fas fa-star"></i> 4.3</span>
+                  <span class="price">15min</span>
+                </div>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="unsplash_CbNAuxSZTFo-1.png" alt="Delicious pizza" />
+            <div class="content">
+              <p>Farm House Pizza <span>₹250</span></p>
+              <div class="actions">
+                <div>
+                  <span class="rating"><i class="fas fa-star"></i> 4.3</span>
+                  <span class="price">15min</span>
+                </div>
+                <button class="add">+</button>
+              </div>
+            </div>
+            <div class="discount-badge">20%</div>
+          </div>
+          <div class="card">
+            <img src="unsplash_nP11TkjxJ7s.png" alt="Delicious pizza" />
+            <div class="content">
+              <p>Special Pizza <span>₹280</span></p>
+              <div class="actions">
+                <div>
+                  <span class="rating"><i class="fas fa-star"></i> 4.3</span>
+                  <span class="price">15min</span>
+                </div>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="unsplash_UxRhrU8fPHQ.png" alt="Delicious pizza" />
+            <div class="content">
+              <p>Cheese Burst Pizza <span>₹300</span></p>
+              <div class="actions">
+                <div>
+                  <span class="rating"><i class="fas fa-star"></i> 4.3</span>
+                  <span class="price">15min</span>
+                </div>
+                <button class="add">+</button>
+              </div>
+            </div>
+            <div class="discount-badge">20%</div>
+          </div>
+          <div class="card">
+            <img src="pexels-mumma-oyens-8799602 1.png" alt="Delicious pizza" />
+            <div class="content">
+              <p>Starter <span>₹250</span></p>
+              <div class="actions">
+                <div>
+                  <span class="rating"><i class="fas fa-star"></i> 4.3</span>
+                  <span class="price">15min</span>
+                </div>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="unsplash_Y6OgisiGBjM-1.png" alt="Delicious pizza" />
+            <div class="content">
+              <p>Capsicum Pizza <span>₹210</span></p>
+              <div class="actions">
+                <div>
+                  <span class="rating"><i class="fas fa-star"></i> 4.3</span>
+                  <span class="price">15min</span>
+                </div>
+                <button class="add">+</button>
+              </div>
+            </div>
+            <div class="discount-badge">20%</div>
+          </div>
+          <div class="card">
+            <img src="unsplash_MqT0asuoIcU-1.png" alt="Delicious pizza" />
+            <div class="content">
+              <p>Onion Pizza <span>₹199</span></p>
+              <div class="actions">
+                <div>
+                  <span class="rating"><i class="fas fa-star"></i> 4.3</span>
+                  <span class="price">15min</span>
+                </div>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="unsplash_sejqj6Eaqe8.png" alt="Delicious pizza" />
+            <div class="content">
+              <p>Combo Meal <span>₹380</span></p>
+              <div class="actions">
+                <div>
+                  <span class="rating"><i class="fas fa-star"></i> 4.3</span>
+                  <span class="price">15min</span>
+                </div>
+                <button class="add">+</button>
+              </div>
+            </div>
+            <div class="discount-badge">20%</div>
+          </div>
+          <div class="card">
+            <img src="p3.png" alt="Delicious pizza" />
+            <div class="content">
+              <p>Pizza Margherita <span>₹240</span></p>
+              <div class="actions">
+                <div>
+                  <span class="rating"><i class="fas fa-star"></i> 4.3</span>
+                  <span class="price">15min</span>
+                </div>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="burger.png" alt="Delicious pizza" />
+            <div class="content">
+              <p>Burger <span>₹150</span></p>
+              <div class="actions">
+                <div>
+                  <span class="rating"><i class="fas fa-star"></i> 4.3</span>
+                  <span class="price">15min</span>
+                </div>
+                <button class="add">+</button>
+              </div>
+            </div>
+            <div class="discount-badge">20%</div>
+          </div>
+          <div class="card">
+            <img src="Meal of The Day.png" alt="Delicious pizza" />
+            <div class="content">
+              <p>Pizza Margherita <span>₹450</span></p>
+              <div class="actions">
+                <div>
+                  <span class="rating"><i class="fas fa-star"></i> 4.3</span>
+                  <span class="price">15min</span>
+                </div>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular Items Section -->
+    <section class="section">
+      <div class="container">
+        <h2 class="popular-items">Popular Items</h2>
+        <span style="display: flex; justify-content: center">
+          <div class="popular-items-slider">
+            <!-- Popular Item -->
+            <span
+              ><div class="card">
+                <img src="unsplash_sejqj6Eaqe8.png" alt="Delicious pizza" />
+                <div class="content">
+                  <p>Pasta Alfredo <span>₹249</span></p>
+                  <div class="actions">
+                    <div>
+                      <span class="rating"
+                        ><i class="fas fa-star"></i> 4.3</span
+                      >
+                      <span class="price">15min</span>
+                    </div>
+                    <button class="add">+</button>
+                  </div>
+                </div>
+              </div></span
+            >
+            <!-- Repeat similar blocks for other popular items -->
+            <span
+              ><div class="card">
+                <img src="unsplash_MqT0asuoIcU-1.png" />
+                <div class="content">
+                  <p>Pasta Alfredo <span>₹249</span></p>
+                  <div class="actions">
+                    <div>
+                      <span class="rating"
+                        ><i class="fas fa-star"></i> 4.3</span
+                      >
+                      <span class="price">15min</span>
+                    </div>
+                    <button class="add">+</button>
+                  </div>
+                </div>
+              </div></span
+            >
+            <span
+              ><div class="card">
+                <img src="unsplash_sejqj6Eaqe8.png" alt="Delicious salad" />
+                <div class="content">
+                  <p>Pasta Alfredo <span>₹249</span></p>
+                  <div class="actions">
+                    <div>
+                      <span class="rating"
+                        ><i class="fas fa-star"></i> 4.3</span
+                      >
+                      <span class="price">15min</span>
+                    </div>
+                    <button class="add">+</button>
+                  </div>
+                </div>
+              </div></span
+            >
+            <span
+              ><div class="card">
+                <img src="unsplash_MqT0asuoIcU.png" />
+                <div class="content">
+                  <p>Pasta Alfredo <span>₹249</span></p>
+                  <div class="actions">
+                    <div>
+                      <span class="rating"
+                        ><i class="fas fa-star"></i> 4.3</span
+                      >
+                      <span class="price">15min</span>
+                    </div>
+                    <button class="add">+</button>
+                  </div>
+                </div>
+              </div></span
+            >
+            <span>
+              <div class="card">
+                <img src="unsplash_UxRhrU8fPHQ.png" />
+                <div class="content">
+                  <p>Pasta Alfredo <span>₹249</span></p>
+                  <div class="actions">
+                    <div>
+                      <span class="rating"
+                        ><i class="fas fa-star"></i> 4.3</span
+                      >
+                      <span class="price">15min</span>
+                    </div>
+                    <button class="add">+</button>
+                  </div>
+                </div>
+              </div></span
+            >
+            <span
+              ><div class="card">
+                <img src="unsplash_MqT0asuoIcU-2.png" />
+                <div class="content">
+                  <p>Pasta Alfredo <span>₹249</span></p>
+                  <div class="actions">
+                    <div>
+                      <span class="rating"
+                        ><i class="fas fa-star"></i> 4.3</span
+                      >
+                      <span class="price">15min</span>
+                    </div>
+                    <button class="add">+</button>
+                  </div>
+                </div>
+              </div></span>
+          </div></span>
+          <div
+          class="text-center mt-6"
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 40px;
+          "
+        >
+          <button id="reqbtn" onclick="showRequestPopup()">Request a Dish</button>
+          <div id="overlayRequest" class="overlayRequest">
+            <div class="request-popup">
+                <h2><strong>Request a Dish</strong></h2>
+                <input type="text" id="dishName" placeholder="Enter Dish Name">
+                
+                <input type="text" id="imageUrl" placeholder="Paste Image URL">
+                <button onclick="cancelRequest()"id = "cancel" >Cancel</button>
+                <button onclick="submitRequest()">Submit Request</button>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Section -->
+   <!-- Video Section -->
+<section class="vid-container-outer">
+  <div class="vid-container">
+    <h2>
+      We are providing best <br />
+      home cooked food delivery service.
+    </h2>
+    <h5>
+      Our mission is to bring you the best home cooked meals,<br />
+      prepared with love and delivered to your doorstep.
+    </h5>
+    <div style="position: relative; margin: 40px">
+      <video id="food-video" width="100%" style="display: block">
+        <source src="vid.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <button
+        id="pause-btn"
+        style="
+          position: absolute;
+          height: 60px;
+          width: 60px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          padding: 10px 20px;
+          background-color: #1ac073;
+          color: white;
+          border: none;
+          border-radius: 50%;
+          font-size: 20px;
+          cursor: pointer;
+        "
+      >
+        <i class="fa-solid fa-play"></i>
+      </button>
+    </div>
+  </div>
+</section>
+    <!-- Contact Section -->
+    <section class="section" style="background-color: #e5e7eb">
+      <div class="container contact-section">
+        <div>
+          <div>
+            <h2 style="font-weight: 300;">
+              Do you have a question <br />
+              or want to become a seller?<br/>
+              <span style="font-size: 15px; font-weight:100; color:#787575;">Fill this form and our manager will cantact you in the next 48
+              hours.</span>
+            </h2>
+          </div>
+          <form>
+            <div class="row">
+              <input type="text" placeholder="Your Name" />
+              <input type="email" placeholder="Your Email" />
+            </div>
+            <textarea placeholder="Your Message"></textarea>
+            <button>Submit</button>
+          </form>
+        </div>
+        <div>
+          <img
+            src="Food_delivery_cute_man_riding_motorcycles_cartoon_art_illustration 2.png"
+            alt="Contact illustration"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="logo">JTGeats</div>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Menu</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </nav>
+        <div class="social">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div style="width: 100%; height:1px; border:1px solid white;"></div>
+    </footer>
+    
+     <script src="script.js"></script>
+  </body>
+</html>
